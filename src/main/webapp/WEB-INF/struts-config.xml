@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+	<data-sources></data-sources>
+	<form-beans>
+		<form-bean name="nullForm" type="org.apache.struts.action.DynaActionForm" />
+	</form-beans>
+	<global-exceptions></global-exceptions>
+	<global-forwards></global-forwards>
+	<action-mappings>
+	
+<!-- 		<action path="/list" type="org.apache.struts.actions.ForwardAction"
+			name="nullForm" parameter="/pages/list.jsp" />
+ -->
+ 		<action path="/list" type="jp.co.apsys.excel_api.service.action.PersonListAction"
+			name="nullForm" />
+ 		<action path="/search" type="jp.co.apsys.excel_api.service.action.PersonSearchAction"
+			name="nullForm" />
+	
+
+
+	</action-mappings>
+	
+	
+	
+</struts-config>
